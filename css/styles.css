@@ -1,0 +1,49 @@
+/*variables*/
+:root {
+    --color-orange-1: #ec6216;
+    --color-orange-2: #e7901a;
+    --color-blue: #021d49;
+    --white :#ffff;
+    --font-primary: "Maven Pro", sans-serif;
+  }
+
+/*Nav*/
+
+.logo {
+    width: 100px;
+    height: auto; /* Maintain the aspect ratio */
+    margin: 5px;
+  }
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: var(--font-primary);
+    color: var(--white);
+
+}
+
+.navbar-nav .nav-item a{
+   padding-left: 2rem;
+   padding-right: 2rem;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color: var(--color-orange-1);
+    font-weight: 400;
+}
+
+.bi {
+    font-size: 1.3rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.zoom-effect {
+    transition: transform 0.2s ease;
+  }
+  
+  .zoom-effect:hover {
+    transform: scale(1.3);
+  }
+
+  
