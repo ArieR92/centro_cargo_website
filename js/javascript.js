@@ -7,3 +7,15 @@ $('.readmore-btn').on('click', function(){
     $(this).text(replaceText);
   
   });
+
+  $(document).ready(function() {
+    // El código aquí se ejecutará cuando el DOM esté listo
+    console.log("jQuery se ha cargado correctamente.");
+  });
+  
+
+
+
+
+
+

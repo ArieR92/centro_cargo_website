@@ -69,13 +69,19 @@
 
 /*Home*/
 
-.btn-scroll {
-  width: 7rem;
+.readmore-btn {
+  width: 7auto;
   font-family: var(--font-primary);
   font-weight: 500;
   font-size: 1rem;
-  background-color: var(--white);
-  color: var(--color-orange-1);
+  background-color: #021d49;
+  color: var(--white);
+  border-radius: 30px;
+}
+
+.readmore-btn:hover {
+  color: var(--color-orange-2);
+  background-color: var(--color-blue);
 }
 
 .container-1 {
