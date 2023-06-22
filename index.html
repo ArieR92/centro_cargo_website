@@ -4,72 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- Bootstrap links -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <!-- Custom styles -->
     <link rel="stylesheet" href="/css/styles.css">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     
     <title>Centro Cargo</title>
 </head>
 <body>
     <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
-                <img src="/img/LOGO_CENTRO_ CARGO_BLANCO-07-09.png" alt="Logo" class="logo">
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mx-2">
+        <a class="navbar-brand" href="#">
+            <img src="/img/LOGO_CENTRO_ CARGO_BLANCO-07-09.png" alt="Logo" class="logo">
+        </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="bi bi-three-dots"></span>
-            </button>
+        <!-- Navbar toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="bi bi-three-dots"></span>
+        </button>
 
-            <div class="collapse navbar-collapse justify-content-end justify-sm-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav d-flex align-items-center">
-                    <li class="nav-item px-3">
-                        <a class="nav-link px-3" href="#">Home</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">About us</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item px-3">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end justify-sm-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item px-3">
+                    <a class="nav-link px-3" href="#home">Home</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#aboutus">About us</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="navbar-collapse justify-content-end icons d-none d-md-none">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-whatsapp"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-instagram"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-facebook"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-envelope"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <!-- Social media icons -->
+        <div class="navbar-collapse justify-content-end icons d-none d-md-none">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-whatsapp"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-envelope"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <!-- End Navbar -->
 
     <!-- Main container -->
-    <div class="container">
-        <!-- Home -->
+
+    <!-- Home -->
+    <div class="container" id="home">
         <div class="row mt-5 mx-1">
             <div class="col-12">
                 <h1 class="tittle display-2 display-md-6 text-center text-md-start mb-5">CENTRO CAR<span class="highlight">GO</span></h1>
@@ -79,7 +84,7 @@
                             <div class="col-12 col-md-10 container-form mt-5">
                                 <h3 class="secondary-text text-center text-md-start">Track and find the position of your package<br>just enter the tracking number.</h3>
                                 <div class="d-flex flex-column flex-md-row align-items-center">
-                                    <input class="form-control track-input mb-3 mb-md-0" type="text" placeholder="Track number">
+                                    <input class="form-control track-input mb-3 mb-md-0" type="text" placeholder="write your track number here">
                                     <button type="button button-search" class="ms-o ms-md-3 mt-3 mt-md-0 btn btn-primary btn-lg"><i class="bi bi-search"></i></button>
                                 </div>
                             </div>
@@ -88,146 +93,175 @@
                 </div>
             </div>
         </div>
-      </div>
-        <!-- Home end -->
+    </div>
+    <!-- Home end -->
 
-        <!-- Carousel -->
-        <div class="container-fluid mt-5 mx-0">
-            <div class="row">
-                <div class="col-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="/img/wallpaper-1.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/wallpaper-2.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/img/wallpaper-3.jpg" class="d-block w-100" alt="...">
-                            </div>
+    <!-- Carousel -->
+    <div class="container-fluid mt-5 mx-0">
+        <div class="row">
+            <div class="col-12">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/wallpaper-1.jpg" class="d-block w-100" alt="...">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-item">
+                            <img src="/img/wallpaper-2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/wallpaper-3.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
-        <!-- Carousel end -->
+    </div>
+    <!-- Carousel end -->
 
-        <!-- About us -->
-    <div class="container mt-5">
-    <div class="row mx-0 mx-md-5 justify-content-center">
-      <div class="col-10 d-flex flex-column">
-        <h1 class="aboutus-tittle tittles2">About <span class="highlight">Us</span></h1>
-        <p class="body-text mt-4">Our Central American culture teaches us family values of contribution, support, and family unity, love for our loved ones and friends. We were taught that it is better to give than to receive, and instilled with a seed and a sense of belonging to our countries. That is why CENTRO CARGO is born with the intention of continuing our values and family legacies of unity, and distance will not be a limit to get closer and support our families, organizations, and institutions that wish to send a small gift of love.</p>
-        <p class="body-text">At CENTRO CARGO, we are your shipping center, safe, reliable, and friendly. We, as Central Americans, are in Washington and cross borders to reach your loved ones.</p>
-        <div class="d-flex justify-content-center">
+    <!-- About us -->
+  <div class="container mt-5" id="aboutus">
+      <div class="row mx-0 mx-md-5 justify-content-center">
+        <div class="col-10 d-flex flex-column">
+          <h1 class="aboutus-tittle tittles2">About <span class="highlight">Us</span></h1>
+          <p class="body-text mt-4">Our Central American culture teaches us family values of contribution, support, and family unity, love for our loved ones and friends. We were taught that it is better to give than to receive, and instilled with a seed and a sense of belonging to our countries. That is why CENTRO CARGO is born with the intention of continuing our values and family legacies of unity, and distance will not be a limit to get closer and support our families, organizations, and institutions that wish to send a small gift of love.</p>
+          <p class="body-text">At CENTRO CARGO, we are your shipping center, safe, reliable, and friendly. We, as Central Americans, are in Washington and cross borders to reach your loved ones.</p>
+          <div class="d-flex justify-content-center">
             <a class="btn btn-light collapse-button readmore-btn" type="button" data-bs-toggle="collapse" href="#collapseExample javascript:void();" data-bs-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                Leer más
-              </a>
+              Leer más
+            </a>
+          </div>
+          <div class="divider"></div>
         </div>
-        
-
-        <div class="divider"></div>
-      </div>
-      
-      <div class="col-10 flex-column mt-5 collapse" id="collapseExample">
-        <div class="hidden-text">
+  
+        <div class="col-10 flex-column mt-5 collapse" id="collapseExample">
+          <div class="hidden-text">
             <h1 class="aboutus-tittle tittles2">Mission</h1>
-        <p class="body-text mt-4">We are makers and pioneers who constantly challenge the limits of what is possible to reach our family and friends in Central America, providing excellent service to our customers. We are and will always be your reliable shipping center.</p>
-        <div class="divider"></div>
-      
-        <h1 class="aboutus-tittle tittles2">Vision</h1>
-        <p class="body-text mt-4">At CENTRO CARGO, we are and will remain committed to providing integrity in transportation services and the transfer of messages and goods through companies and logistics channels focused on simplifying processes through technology. We ensure and shorten distances, always keeping the well-being of our Central American communities in mind.</p>
-        <div class="divider"></div>
+            <p class="body-text mt-4">We are makers and pioneers who constantly challenge the limits of what is possible to reach our family and friends in Central America, providing excellent service to our customers. We are and will always be your reliable shipping center.</p>
+            <div class="divider"></div>
+  
+            <h1 class="aboutus-tittle tittles2">Vision</h1>
+            <p class="body-text mt-4">At CENTRO CARGO, we are and will remain committed to providing integrity in transportation services and the transfer of messages and goods through companies and logistics channels focused on simplifying processes through technology. We ensure and shorten distances, always keeping the well-being of our Central American communities in mind.</p>
+            <div class="divider"></div>
+          </div>
         </div>
-        
       </div>
     </div>
-    </div>
-        <!-- About us end -->
-
-        <!-- Services -->
-        <div class="container">
-            <div class="row mx-0 mx-md-5 mt-5 justify-content-center">
-            <!--<div class="col-12 col-md-10 mt-4 mt-md-0 mb-4 mb-md-5">
-                    <h1 class="aboutus-tittle"><span class="highlight">Our</span> services</h1>
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Service 2</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
+  <!-- About us end -->
+  
+  <!-- Services -->
+    <div class="container" id="services">
+      <div class="row mx-0 mx-md-5 mt-5 justify-content-center">
+        <!--<div class="col-12 col-md-10 mt-4 mt-md-0 mb-4 mb-md-5">
+              
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Service 2</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
-                </div>-->
-            <div class="col-12 col-md-10 mt-4 mt-md-0 mb-4 mb-md-5">
-                    <div class="card">
-                        <img src="" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Service 1</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                    <div class="divider mt-5"></div>
-                    <h1 class="aboutus-tittle"><span class="highlight">Contact</span> us</h1>
                 </div>
+            </div>-->
+        <div class="col-12 col-md-10 mt-4 mt-md-5 mb-4 mb-md-5">
+          <h1 class="aboutus-tittle"><span class="highlight">Our</span> services</h1>
+          <div class="card">
+            <img src="" class="card-img-top" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">Service 1</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
+          </div>
+          <div class="divider mt-5"></div>
+          <h1 class="aboutus-tittle"><span class="highlight">Contact</span> us</h1>
         </div>
-        <!-- Services end -->
+      </div>
+    </div>
+  <!-- Services end -->
+  
 
-        <!-- contact -->
-        <div class="container">
-                <div class="row mx-0 mx-md-5 justify-content-center">
-                    <div class="col-12 col-lg-5 align-items-sm-start mt-4 mt-md-0 mb-4 mb-md-5">
-                        <div class="contact-form">
-                            <form>
-                                <div class="form-group mb-2">
-                                    <input type="text" class="form-control" id="name" placeholder="Name">
-                                </div>
-                                <div class="form-group my-2">
-                                    <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                </div>
-                                <div class="form-group my-2">
-                                    <input type="tel" class="form-control" id="phone" placeholder="Phone number">
-                                </div>
-                                <div class="form-group my-2">
-                                    <textarea class="form-control form-control-message" id="message" rows="5" placeholder="Message"></textarea>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-secondary mt-3 submit-button">Send</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-lg-5 align-items-sm-start mt-4 mt-md-0 mb-4 mb-md-5 map">  
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.92155230257913!2d10.362782532362907!3d49.01827790109079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798dc54dd1e5a29%3A0x3f483721dd708a60!2sLimesstra%C3%9Fe%2024%2C%2091614%20M%C3%B6nchsroth!5e0!3m2!1ses!2sde!4v1687255259857!5m2!1ses!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+  <!-- contact -->
+    <div class="container" id="contact">
+        <div class="row mx-0 mx-md-5 justify-content-center">
+          <div class="col-12 col-lg-5 align-items-sm-start mt-4 mt-md-0 mb-4 mb-md-5">
+            <div class="contact-form">
+              <form>
+                <div class="form-group mb-2">
+                  <input type="text" class="form-control" id="name" placeholder="Name">
                 </div>
+                <div class="form-group my-2">
+                  <input type="email" class="form-control" id="email" placeholder="E-mail">
+                </div>
+                <div class="form-group my-2">
+                  <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                </div>
+                <div class="form-group my-2">
+                  <textarea class="form-control form-control-message" id="message" rows="5" placeholder="Message"></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-secondary mt-3 submit-button">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+  
+          <div class="col-12 col-lg-5 align-items-sm-start mt-4 mt-md-0 mb-4 mb-md-5 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455.92155230257913!2d10.362782532362907!3d49.01827790109079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798dc54dd1e5a29%3A0x3f483721dd708a60!2sLimesstra%C3%9Fe%2024%2C%2091614%20M%C3%B6nchsroth!5e0!3m2!1ses!2sde!4v1687255259857!5m2!1ses!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
-            
-        </div>
-        
-          
-          
-          
-        <!-- contact end-->
+      </div>
+  <!-- contact end -->
+  
     
-    <!-- main container end --> 
+  <!-- main container end --> 
     
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/javascript.js"></script>
-
-    
 </body>
+
+<!-- footer-->
+    <footer>
+        <div class="container">
+          <div class="row mt-4 justify-content-around">
+            <div class="col-12 justify-content-center col-md-4">
+              <img src="img/LOGO_CENTRO_ CARGO_BLANCO-TOTAL.png" alt="Logo" class="logo logo-footer img-fluid ms-5 d-none d-md-block">
+              
+            </div>
+            <div class="col-4 col-md-4 box-links text-left">
+                <h5 class="links-footer-tittle">Centro Cargo</h5>
+                <ul class="footer-links list-inline align-items-start">
+                  <li><a href="#home">Inicio</a></li>
+                  <li><a href="#aboutus">Quienes somos</a></li>
+                  <li><a href="#contact">Contacto</a></li>
+                  <li><a href="#">Política de privacidad</a></li>
+                </ul>
+              </div>
+              <div class="col-4 col-md-4 box-contacts d-none d-md-block">
+                <h5 class="contact-footer-tittle">Contacto</h5>
+                <ul class="contact-info list-inline text-left align-items-start">
+                  <li><i class="bi bi-telephone footer-icons ms-3"></i>+(404)663-4369</li>
+                  <li><i class="bi bi-envelope footer-icons ms-3"></i>centrocargo@centrocargo.net</li>
+                  <li><i class="bi bi-whatsapp footer-icons ms-3"></i>+(404)663-4369</li>
+                  <li><i class="bi bi-clock footer-icons ms-3"></i>Lunes a Viernes 09:00 a 20:00 horas</li> 
+                </ul>
+              </div>
+              <div class="col-12">
+                <p class="developer text-center my-3">Developed by <span class="ariel">Ariel M. Rodríguez</span></p>
+              </div>
+              
+          </div>
+        </div>
+    </footer>
+      
+
+<!-- footer end-->
 
 </html>
