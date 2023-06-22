@@ -69,6 +69,47 @@
 
 /*Home*/
 
+.home {
+  position: relative;
+}
+
+#home {
+  position: relative;
+  overflow: hidden;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-image: url("/img/box-03.png");
+  background-repeat: no-repeat;
+  transform: scale(0.9, 0.9) translate(25%, 0%) !important;
+  background-size: 90% auto;
+  background-position: right;
+  z-index: -1;
+}
+
+
+@media screen and (max-width: 767px) {
+  /* Hide the image on small screens */
+  #home::before {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  /* Hide the image on small screens */
+  .home {
+    padding-left: 2rem;
+  }
+}
+
+
+
 .readmore-btn {
   width: 7auto;
   font-family: var(--font-primary);
@@ -92,7 +133,7 @@
   font-family: var(--font-primary);
   font-weight: 700;
   color: var(--white);
-  letter-spacing: 1rem;
+  letter-spacing: 0.8rem;
   line-height: 3rem;
 }
 
