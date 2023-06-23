@@ -73,7 +73,7 @@
   position: relative;
 }
 
-#home, #aboutus {
+#home, #aboutus, #services {
   position: relative;
   overflow: hidden;
 }
@@ -141,6 +141,25 @@
   background-position: right;
   z-index: -1;
 }
+
+/*fourth image*/
+
+
+#services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-image: url("/img/box-02.png");
+  background-repeat: no-repeat;
+  background-size: 90% auto;
+  background-position: center;
+  transform: scale(0.8, 0.8) translate(-15%, 0%) !important;
+  z-index: -1;
+}
+
 
 
 .readmore-btn {
@@ -303,6 +322,9 @@
 .card {
  border-radius: 1.5rem;
  transition: box-shadow 0.3s ease, transform 0.3s ease;
+ height: 15rem;
+ width: 50%;
+
 }
 .card:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
