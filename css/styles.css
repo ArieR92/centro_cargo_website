@@ -119,12 +119,28 @@
   left: 50%;
   background-image: url("/img/box-05.png");
   background-repeat: no-repeat;
-  transform: scale(0.8, 0.8) translate(55%, 20%) !important;
+  transform: scale(0.8, 0.8) translate(55%, 15%) !important;
   background-size: 90% auto;
   background-position: right;
   z-index: -1;
 }
 
+/*third image*/
+
+#aboutus::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background-image: url("/img/box-03.png");
+  background-repeat: no-repeat;
+  transform: scale(0.8, 0.8) translate(-199%, 25%) !important;
+  background-size: 90% auto;
+  background-position: right;
+  z-index: -1;
+}
 
 
 .readmore-btn {
