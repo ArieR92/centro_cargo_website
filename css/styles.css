@@ -87,6 +87,13 @@
   font-size: 10px;
 }
 
+@media (max-width: 576px) {
+  .main-nav {
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
 /*Home*/
 
 .home {
