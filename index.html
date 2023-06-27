@@ -35,24 +35,24 @@
         <div class="collapse main-nav navbar-collapse justify-content-center justify-sm-content-between" id="navbarSupportedContent">
           <ul class="navbar-nav d-flex align-items-center ms-auto">
             <li class="nav-item px-3">
-              <a class="nav-link px-3" href="#home">Home</a>
+              <a class="nav-link px-3 lang" key="navbar_home" href="#home">Home</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#aboutus">About us</a>
+              <a class="nav-link lang" key="navbar_about_us" href="#aboutus">About us</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link lang" key="navbar_services" href="#services">Services</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link lang" key="navbar_contact" href="#contact">Contact</a>
             </li>
           </ul>
 
           <div class="btn-group flex-column-reverse text-center justify-content-center my-3 ms-sm-5 ms-0">
-            <label class="cambiar-idioma-botones" for=""s>Language</label>
+            <label class="cambiar-idioma-botones lang" key="change_language">Language</label>
             <div class=" d-flex justify-content-center">
-                <img class="flag-item ms-2 zoom-effect" src="img/us.svg" alt="English Flag" onclick="changeLanguage('en')">
-                <img class="flag-item ms-2 zoom-effect" src="img/hn.svg" alt="Spanish Flag" onclick="changeLanguage('es')">  
+                <img class="flag-item ms-2 zoom-effect traslate" id="en" src="img/us.svg" alt="English Flag" onclick="changeLanguage('en')">
+                <img class="flag-item ms-2 zoom-effect traslate" id="es" src="img/hn.svg" alt="Spanish Flag" onclick="changeLanguage('es')">  
             </div>
           </div>
           
@@ -73,27 +73,6 @@
           </ul>
         </div>
         
-        <!-- Social media icons -->
-        <!-- <div class="collapse navbar-collapse justify-content-end icons d-none d-md-none" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link zoom-effect" href="#"><i class="contact-icon bi bi-whatsapp"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link zoom-effect" href="https://instagram.com/centrocargo?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="contact-icon bi bi-instagram"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link zoom-effect" href="https://www.facebook.com/profile.php?id=100091906510167" target="_blank"><i class="contact-icon bi bi-facebook"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link zoom-effect" href="mailto:Centrocargo@centrocargo.com"><i class="contact-icon bi bi-envelope"></i></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link zoom-effect" href="mailto:Centrocargo@centrocargo.com"><i class="bi bi-translate"></i></a>
-              </li>
-                
-            </ul>
-        </div> -->
     </nav>
     <!-- End Navbar -->
     <!-- Main container -->
@@ -106,9 +85,9 @@
                     <form>
                         <div>
                             <div class="col-12 col-md-10 container-form mt-5">
-                                <h3 class="secondary-text text-center text-md-start">Track and find the position of your package<br>just enter the tracking number.</h3>
+                                <h3 class="secondary-text text-center text-md-start lang" key="texto-secundario">Track and find the position of your package<br>just enter the tracking number.</h3>
                                 <div class="d-flex flex-column flex-md-row align-items-center">
-                                    <input class="form-control track-input mb-3 mb-md-0" type="text" placeholder="write your track number here">
+                                    <input class="form-control track-input mb-3 mb-md-0 lang" key="texto-placeholer" type="text" placeholder="write your track number here">
                                     <button type="button button-search" class="ms-o ms-md-3 mt-3 mt-md-0 btn btn-primary btn-lg"><i class="bi bi-search"></i></button>
                                 </div>
                             </div>
@@ -152,11 +131,11 @@
   <div class="container-fluid mt-5" id="aboutus">
       <div class="row mx-0 mx-md-5 justify-content-center">
         <div class="col-10 d-flex flex-column">
-          <h1 class="aboutus-tittle tittles2">About <span class="highlight">Us</span></h1>
-          <p class="body-text mt-4">Our Central American culture teaches us family values of contribution, support, and family unity, love for our loved ones and friends. We were taught that it is better to give than to receive, and instilled with a seed and a sense of belonging to our countries. That is why CENTRO CARGO is born with the intention of continuing our values and family legacies of unity, and distance will not be a limit to get closer and support our families, organizations, and institutions that wish to send a small gift of love.</p>
-          <p class="body-text">At CENTRO CARGO, we are your shipping center, safe, reliable, and friendly. We, as Central Americans, are in Washington and cross borders to reach your loved ones.</p>
+          <h1 class="aboutus-tittle tittles2 lang" key="aboutus-title">About <span class="highlight">Us</span></h1>
+          <p class="body-text mt-4 lang" key="aboutus-paragraph1">Our Central American culture teaches us family values of contribution, support, and family unity, love for our loved ones and friends. We were taught that it is better to give than to receive, and instilled with a seed and a sense of belonging to our countries. That is why CENTRO CARGO is born with the intention of continuing our values and family legacies of unity, and distance will not be a limit to get closer and support our families, organizations, and institutions that wish to send a small gift of love.</p>
+          <p class="body-text lang" key="aboutus-paragraph2">At CENTRO CARGO, we are your shipping center, safe, reliable, and friendly. We, as Central Americans, are in Washington and cross borders to reach your loved ones.</p>
           <div class="d-flex justify-content-center">
-            <a class="btn btn-light collapse-button readmore-btn" type="button" data-bs-toggle="collapse" href="#collapseExample javascript:void();" data-bs-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <a class="btn btn-light collapse-button readmore-btn lang" type="button" data-bs-toggle="collapse" href="#collapseExample javascript:void();" data-bs-target="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" key="readmore-btn">
               Read more
             </a>
           </div>
@@ -165,12 +144,12 @@
   
         <div class="col-10 flex-column mt-5 collapse" id="collapseExample">
           <div class="hidden-text">
-            <h1 class="aboutus-tittle tittles2">Mission</h1>
-            <p class="body-text mt-4">We are makers and pioneers who constantly challenge the limits of what is possible to reach our family and friends in Central America, providing excellent service to our customers. We are and will always be your reliable shipping center.</p>
+            <h1 class="aboutus-tittle tittles2 lang" key="mission-title">Mission</h1>
+            <p class="body-text mt-4 lang" key="mission-paragraph">We are makers and pioneers who constantly challenge the limits of what is possible to reach our family and friends in Central America, providing excellent service to our customers. We are and will always be your reliable shipping center.</p>
             <div class="divider"></div>
   
-            <h1 class="aboutus-tittle tittles2">Vision</h1>
-            <p class="body-text mt-4">At Centro Cargo, we are and will continue to be committed to providing transportation and delivery services for messages and goods through companies and logistical channels focused on streamlining processes through technology, ensuring and shortening distances, always keeping the well-being of our Central American communities from 2023 to 2028 in mind.</p>
+            <h1 class="aboutus-tittle tittles2 lang" key="vision-title">Vision</h1>
+            <p class="body-text mt-4 lang" key="vision-paragraph">At Centro Cargo, we are and will continue to be committed to providing transportation and delivery services for messages and goods through companies and logistical channels focused on streamlining processes through technology, ensuring and shortening distances, always keeping the well-being of our Central American communities from 2023 to 2028 in mind.</p>
             <div class="divider"></div>
           </div>
         </div>
@@ -182,7 +161,7 @@
   <div class="container-fluid my-5 d-flex justify-content-center" id="services">
     <div class="row mx-0 mx-md-5 col-services justify-content-around">
       <div>
-        <h1 class="aboutus-tittle tittles2" data-translate="aboutus-title">Services</h1>
+        <h1 class="aboutus-tittle tittles2 lang" data-translate="aboutus-title" key="service_1_title">Services</h1>
       </div>
       <div class="col-12 col-sm-4 service-card">
         <div class="card">
@@ -191,8 +170,8 @@
           </div>
           
           <div class="card-body">
-            <h5 class="card-title my-4">Household</h5>
-            <p>Send messages to your relatives and gifts to Central America, including household items and personal articles.</p>
+            <h5 class="card-title my-4 lang" key="service1-subtittle">Household</h5>
+            <p class="lang" key="service_1_description">Send messages to your relatives and gifts to Central America, including household items and personal articles.</p>
             <div class="justify-content-center d-flex">
               <a class="btn btn-info mb-3" data-bs-target="#multiCollapseExample1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
                 See box sizes
@@ -298,25 +277,25 @@
           
           <div class="contenedor-contactus mx-0 mx-md-5">
             
-            <h1 class="aboutus-tittle tittles2" data-translate="aboutus-title">Contact <span class="highlight">us</span</h1>
+            <h1 class="aboutus-tittle tittles2 mb-5 lang" data-translate="aboutus-title" key="contact_us_title" >Contact <span class="highlight">us</span</h1>
           </div>
           <div class="col-12 col-lg-5 align-items-sm-start mt-4 mt-md-0 mb-4 mb-md-5">
             <div class="contact-form">
               <form>
                 <div class="form-group mb-2">
-                  <input type="text" class="form-control" id="name" placeholder="Name">
+                  <input type="text" class="form-control lang" id="name" key="contact_us_name" placeholder="Name">
                 </div>
                 <div class="form-group my-2">
-                  <input type="email" class="form-control" id="email" placeholder="E-mail">
+                  <input type="email" class="form-control lang" id="email" key="contact_us_email" placeholder="E-mail">
                 </div>
                 <div class="form-group my-2">
-                  <input type="tel" class="form-control" id="phone" placeholder="Phone number">
+                  <input type="tel" class="form-control lang" id="phone" key="contact_us_phone" placeholder="Phone number">
                 </div>
                 <div class="form-group my-2">
-                  <textarea class="form-control form-control-message" id="message" rows="5" placeholder="Message"></textarea>
+                  <textarea class="form-control form-control-message lang" id="message" key="contact_us_message" rows="5" placeholder="Message"></textarea>
                 </div>
                 <div class="text-center">
-                  <button type="submit" class="btn btn-secondary mt-3 submit-button">Send</button>
+                  <button type="submit" class="btn btn-secondary mt-3 submit-button lang" key="contact_us_submit">Send</button>
                 </div>
               </form>
             </div>
@@ -347,14 +326,14 @@
             <div class="col-4 col-md-4 box-links text-left">
                 <h5 class="links-footer-tittle">Centro Cargo</h5>
                 <ul class="footer-links list-inline align-items-start">
-                  <li><a href="#home">Inicio</a></li>
-                  <li><a href="#aboutus">Quienes somos</a></li>
-                  <li><a href="#contact">Contacto</a></li>
-                  <li><a href="#">Política de privacidad</a></li>
+                  <li><a class="lang" key="navbar_home" href="#home">Inicio</a></li>
+                  <li><a class="lang" key="navbar_about_us" href="#aboutus">Quienes somos</a></li>
+                  <li><a class="lang" key="navbar_contact" href="#contact">Contacto</a></li>
+                  <li><a class="lang" key="policy" href="#">Política de privacidad</a></li>
                 </ul>
               </div>
               <div class="col-4 col-md-4 box-contacts d-none d-md-block">
-                <h5 class="contact-footer-tittle">Contacto</h5>
+                <h5 class="contact-footer-tittle lang" key="contact_us_title">Contacto</h5>
                 <ul class="contact-info list-inline text-left align-items-start">
                   <li><i class="bi bi-telephone footer-icons ms-3"></i>+(404)663-4369</li>
                   <li><i class="bi bi-envelope footer-icons ms-3"></i>centrocargo@centrocargo.net</li>
