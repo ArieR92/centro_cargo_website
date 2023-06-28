@@ -33,7 +33,7 @@
         </button>
         <!-- Navbar links -->
         <div class="collapse main-nav navbar-collapse justify-content-center justify-sm-content-between" id="navbarSupportedContent">
-          <ul class="navbar-nav d-flex align-items-center ms-auto">
+          <ul class="navbar-nav menu d-flex align-items-center ms-auto">
             <li class="nav-item px-3">
               <a class="nav-link px-3 lang" key="navbar_home" href="#home">Home</a>
             </li>
@@ -48,16 +48,16 @@
             </li>
           </ul>
 
-          <div class="btn-group flex-column-reverse text-center justify-content-center my-3 ms-sm-5 ms-0">
+          <div class="btn-group flex-column-reverse text-center justify-content-center mt-3 me-sm-5 ms-0">
             <label class="cambiar-idioma-botones lang" key="change_language">Language</label>
             <div class=" d-flex justify-content-center">
-                <img class="flag-item ms-2 zoom-effect traslate" id="en" src="img/us.svg" alt="English Flag" onclick="changeLanguage('en')">
-                <img class="flag-item ms-2 zoom-effect traslate" id="es" src="img/hn.svg" alt="Spanish Flag" onclick="changeLanguage('es')">  
+                <img class="flag-item m-2 zoom-effect traslate" id="en" src="img/us.svg" alt="English Flag" onclick="changeLanguage('en')">
+                <img class="flag-item m-2 zoom-effect traslate" id="es" src="img/hn.svg" alt="Spanish Flag" onclick="changeLanguage('es')">  
             </div>
-          </div>
+          </div> 
           
           
-          <ul class="navbar-nav ms-md-auto ms-0 align-items-center flex-row mx-2 justify-content-center">
+          <ul class="navbar-nav ms-0 align-items-center flex-row mx-2 justify-content-center">
             <li class="nav-item">
               <a class="nav-link zoom-effect" href="https://wa.me/12064326976" target="_blank"><i class="contact-icon bi bi-whatsapp"></i></a>
             </li>
@@ -173,7 +173,7 @@
             <h5 class="card-title my-4 lang" key="service1-subtittle">Household</h5>
             <p class="lang" key="service_1_description">Send messages to your relatives and gifts to Central America, including household items and personal articles.</p>
             <div class="justify-content-center d-flex">
-              <a class="btn btn-info mb-3" data-bs-target="#multiCollapseExample1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+              <a class="btn btn-info mb-3 lang" key="service-button1" data-bs-target="#multiCollapseExample1" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
                 See box sizes
               </a>
             </div>
@@ -281,15 +281,24 @@
           </div>
           <div class="col-12 col-lg-5 align-items-sm-start mt-4 mt-md-0 mb-4 mb-md-5">
             <div class="contact-form">
-              <form>
+              <form novalidate>
                 <div class="form-group mb-2">
-                  <input type="text" class="form-control lang" id="name" key="contact_us_name" placeholder="Name">
+                  <input required type="text" class="form-control lang" id="name" key="contact_us_name" placeholder="Name">
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
                 </div>
                 <div class="form-group my-2">
-                  <input type="email" class="form-control lang" id="email" key="contact_us_email" placeholder="E-mail">
+                  <input required type="email" class="form-control lang" id="email" key="contact_us_email" placeholder="E-mail">
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
                 </div>
                 <div class="form-group my-2">
-                  <input type="tel" class="form-control lang" id="phone" key="contact_us_phone" placeholder="Phone number">
+                  <input required type="tel" class="form-control lang" id="phone" key="contact_us_phone" placeholder="Phone number">
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
                 </div>
                 <div class="form-group my-2">
                   <textarea class="form-control form-control-message lang" id="message" key="contact_us_message" rows="5" placeholder="Message"></textarea>
@@ -305,7 +314,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172138.76207297397!2d-122.50687665512264!3d47.61314189095049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490102c93e83355%3A0x102565466944d59a!2sSeattle%2C%20Washington%2C%20EE.%20UU.!5e0!3m2!1ses!2sde!4v1687723120104!5m2!1ses!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-      </div>
+    </div>
   <!-- contact end -->
   
     

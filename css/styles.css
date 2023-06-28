@@ -28,11 +28,31 @@
   background-color: var(--color-blue) !important;
 }
 
+@media (max-width: 575px) {
+  .menu {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 575px) {
+  .menu {
+    margin-right: 9rem;
+  }
+}
+
 .logo {
     width: 100px;
     height: auto; /* Maintain the aspect ratio */
     margin: 5px;
 }
+
+@media (max-width: 575px) {
+  .logo {
+    margin-right: 3rem;
+  }
+}
+
+
 
 .navbar-nav .nav-item .nav-link {
     font-size: 1.1rem;
