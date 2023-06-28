@@ -1,0 +1,31 @@
+/*variables*/
+:root {
+    --color-orange-1: #ec6216;
+    --color-orange-2: #e7901a;
+    --color-blue: #021d49;
+    --color-green: #C6D92D;
+    --white :#ffff;
+    --font-primary: "Maven Pro", sans-serif;
+    --roboto:'Roboto', sans-serif;
+
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    
+  }
+
+  .Privacy_tittle {
+    font-family: var(--font-primary);
+  
+  }
+  
+  p {
+    font-family: var(--font-primary);
+  }
+  
+  .policy-container-text p {
+    text-align: justify;
+  }
