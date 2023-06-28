@@ -312,10 +312,12 @@
   width: 50px;
   height: 50px;
   border-radius: 100%;
+  color: var(--color-blue);
 }
 
 .btn-primary:hover{
   background-color: var(--color-orange-2);
+  color: var(--color-blue);
 }
 
 .track-input {
@@ -490,6 +492,7 @@
   border: none;
   width: 8rem;
   border-radius: 30px;
+  color: var(--color-blue);
 }
 
 .map iframe {
