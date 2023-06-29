@@ -7,13 +7,16 @@
     --white :#ffff;
     --font-primary: "Maven Pro", sans-serif;
     --roboto:'Roboto', sans-serif;
+    
 
   }
 
   body {
+    
     margin: 0;
     padding: 0;
     background-color: var(--color-blue);
+    scroll-behavior: smooth;
     
   }
 
